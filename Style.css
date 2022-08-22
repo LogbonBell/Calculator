@@ -1,0 +1,70 @@
+ *, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.calc-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 130px);
+  grid-template-rows: minmax(110px, auto) repeat(5, 105px);
+}
+
+.calc-grid > button {
+  cursor: crosshair;
+  font-size: 2rem;
+  border: 2px solid aliceblue;
+  border-radius: 50px;
+  background-color: goldenrod;
+  background-color: red;
+}
+
+.calc-grid > button:hover {
+  background-color: skyblue;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.calc-display {
+  grid-column: 1 / -1;
+  background-color: black;
+  border-radius: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.calc-display .previous-input {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.calc-display .current-input {
+  color: white;
+  font-size: 2.5rem;
+}
+
+#border-background {
+  border: 10px solid darkcyan; 
+  border-width: 260px; border-radius: 50px; 
+  border-bottom-width: 10px; 
+  border-top-width: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
